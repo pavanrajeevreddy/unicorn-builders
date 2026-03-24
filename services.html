@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Services - UNICORN BUILDERS</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f5f7fa;
+}
+
+/* HEADER */
+
+header{
+background:#0a1f44;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+header h1{
+margin:0;
+color:#d4af37;
+font-size:40px;
+}
+
+/* NAVBAR */
+
+nav{
+background:#061633;
+text-align:center;
+padding:12px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:20px;
+font-size:18px;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+/* HERO */
+
+.hero{
+background:linear-gradient(rgba(10,31,68,0.7),rgba(10,31,68,0.7)),
+url("https://images.unsplash.com/photo-1503387762-592deb58ef4e");
+height:300px;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:32px;
+font-weight:bold;
+}
+
+/* SERVICES GRID */
+
+.services{
+padding:50px 20px;
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card h3{
+color:#0a1f44;
+margin:15px;
+}
+
+.card p{
+margin:0 15px 20px;
+color:#555;
+line-height:1.6;
+}
+
+/* PROCESS */
+
+.process{
+background:#0a1f44;
+color:white;
+padding:60px 20px;
+text-align:center;
+}
+
+.process h2{
+color:#d4af37;
+margin-bottom:40px;
+}
+
+.steps{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.step{
+width:220px;
+}
+
+.step h3{
+margin-bottom:10px;
+}
+
+/* WHY SECTION */
+
+.why{
+padding:60px 20px;
+text-align:center;
+}
+
+.why h2{
+color:#0a1f44;
+margin-bottom:30px;
+}
+
+.why-boxes{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.why-box{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+width:260px;
+}
+
+/* CTA */
+
+.cta{
+background:#d4af37;
+color:#0a1f44;
+text-align:center;
+padding:40px;
+}
+
+.cta h2{
+margin-bottom:10px;
+}
+
+.cta a{
+display:inline-block;
+margin-top:15px;
+padding:12px 25px;
+background:#0a1f44;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+/* FOOTER */
+
+footer{
+background:#061633;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+nav a{
+display:block;
+margin:10px;
+}
+
+.steps{
+flex-direction:column;
+align-items:center;
+}
+
+.why-boxes{
+flex-direction:column;
+align-items:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>UNICORN BUILDERS</h1>
+<p>Quality of Generations</p>
+</header>
+
+<nav>
+<a href="index.html">HOME</a>
+<a href="about.html">ABOUT</a>
+<a href="project.html">PROJECTS</a>
+<a href="services.html">SERVICES</a>
+<a href="contact.html">CONTACT</a>
+</nav>
+
+<div class="hero">
+Our Professional Services
+</div>
+
+<section class="services">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+<h3>Land Development</h3>
+<p>Planning layouts, roads, drainage, and infrastructure for future residential communities.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6">
+<h3>Apartment Construction</h3>
+<p>Modern apartments with strong construction, premium materials, and smart design.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4">
+<h3>Property Development</h3>
+<p>Complete residential project development with long-term value and quality living.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115">
+<h3>Pre-Booking Projects</h3>
+<p>Early investment opportunities with better pricing and flexible options.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
+<h3>Interior Planning</h3>
+<p>Guidance on modern interiors to maximize comfort, style, and functionality.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599423300746-b62533397364">
+<h3>Consultation</h3>
+<p>Expert advice on property selection, planning, and investment decisions.</p>
+</div>
+
+</section>
+
+<section class="process">
+
+<h2>Our Working Process</h2>
+
+<div class="steps">
+
+<div class="step">
+<h3>1. Planning</h3>
+<p>Understanding requirements and designing the layout.</p>
+</div>
+
+<div class="step">
+<h3>2. Design</h3>
+<p>Creating modern and efficient architectural designs.</p>
+</div>
+
+<div class="step">
+<h3>3. Construction</h3>
+<p>Executing projects with quality materials and skilled workers.</p>
+</div>
+
+<div class="step">
+<h3>4. Delivery</h3>
+<p>Timely completion and handover to customers.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="why">
+
+<h2>Why Choose Our Services</h2>
+
+<div class="why-boxes">
+
+<div class="why-box">
+<h3>Quality Work</h3>
+<p>We maintain high construction standards in every project.</p>
+</div>
+
+<div class="why-box">
+<h3>On-Time Delivery</h3>
+<p>Projects are delivered as promised without delays.</p>
+</div>
+
+<div class="why-box">
+<h3>Customer Satisfaction</h3>
+<p>We prioritize customer needs and long-term trust.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>Ready to Build Your Dream Home?</h2>
+<p>Contact us today and start your journey with UNICORN BUILDERS</p>
+
+<a href="contact.html">Contact Now</a>
+
+</section>
+
+<footer>
+© 2026 UNICORN BUILDERS | All Rights Reserved
+</footer>
+
+</body>
+</html>
