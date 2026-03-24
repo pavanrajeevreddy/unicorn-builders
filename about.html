@@ -191,26 +191,82 @@ padding:15px;
 
 /* MOBILE */
 
-@media (max-width:768px){
+@media(max-width:768px){
+
+nav{
+padding:10px;
+}
 
 nav a{
 display:block;
-margin:10px;
+margin:8px 0;
+font-size:16px;
 }
 
-.vision-mission{
+header h1{
+font-size:26px;
+}
+
+header p{
+font-size:14px;
+}
+
+.hero{
+height:220px;
+font-size:22px;
+text-align:center;
+padding:10px;
+}
+
+section{
+padding:25px 15px;
+}
+
+.services,
+.projects{
+grid-template-columns:1fr !important;
+}
+
+.card,
+.project-card{
+width:100%;
+}
+
+h2{
+font-size:22px;
+}
+
+p{
+font-size:14px;
+}
+
+.steps{
+flex-direction:column;
+align-items:center;
+gap:20px;
+}
+
+.why-boxes{
+flex-direction:column;
+align-items:center;
+gap:20px;
+}
+
+.contact-container,
+.contact-wrapper{
 flex-direction:column;
 align-items:center;
 }
 
-.why-list{
-flex-direction:column;
-align-items:center;
+.contact-info,
+.contact-form,
+.contact-left,
+.contact-right{
+width:90% !important;
 }
 
-.stats-container{
-flex-direction:column;
-gap:30px;
+.map iframe{
+height:250px;
 }
 
 }
