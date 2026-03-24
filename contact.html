@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Contact - UNICORN BUILDERS</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f9f9f9;
+}
+
+/* HEADER */
+
+header{
+background:#0a1f44;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+header h1{
+margin:0;
+color:#d4af37;
+font-size:40px;
+}
+
+/* NAVBAR */
+
+nav{
+background:#061633;
+text-align:center;
+padding:12px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:20px;
+font-size:18px;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+/* TITLE */
+
+.title{
+text-align:center;
+padding:40px 20px;
+}
+
+.title h2{
+color:#0a1f44;
+font-size:32px;
+}
+
+/* CONTACT SECTION */
+
+.contact-wrapper{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+padding:30px;
+}
+
+/* LEFT SIDE */
+
+.contact-left{
+width:350px;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.info-box{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.info-box h3{
+margin:0 0 10px;
+color:#0a1f44;
+}
+
+/* RIGHT SIDE FORM */
+
+.contact-right{
+width:400px;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-right h2{
+color:#0a1f44;
+text-align:center;
+}
+
+.contact-right input,
+.contact-right textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+.contact-right button{
+width:100%;
+padding:12px;
+background:#0a1f44;
+color:white;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+}
+
+.contact-right button:hover{
+background:#d4af37;
+color:black;
+}
+
+/* MAP */
+
+.map{
+margin:40px;
+}
+
+iframe{
+border-radius:10px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+background:#061633;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+nav a{
+display:block;
+margin:10px;
+}
+
+.contact-wrapper{
+flex-direction:column;
+align-items:center;
+}
+
+.contact-left,
+.contact-right{
+width:90%;
+}
+
+.map{
+margin:20px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>UNICORN BUILDERS</h1>
+<p>Quality of Generations</p>
+</header>
+
+<nav>
+<a href="index.html">HOME</a>
+<a href="about.html">ABOUT</a>
+<a href="project.html">PROJECTS</a>
+<a href="services.html">SERVICES</a>
+<a href="contact.html">CONTACT</a>
+</nav>
+
+<div class="title">
+<h2>Get In Touch With Us</h2>
+<p>We are here to help you to build your dream home</p>
+</div>
+
+<div class="contact-wrapper">
+
+<!-- LEFT SIDE -->
+
+<div class="contact-left">
+
+<div class="info-box">
+<h3>📞 Phone</h3>
+<p>+91 9963748635</p>
+<p>+91 8008145635</p>
+</div>
+
+<div class="info-box">
+<h3>📧 Email</h3>
+<p>unicornbuilders@email.com</p>
+<p>support@unicornbuilders.com</p>
+</div>
+
+<div class="info-box">
+<h3>📍 Office Address</h3>
+<p>Road No 14, Alkapur,<br>Manikonda, Hyderabad</p>
+</div>
+
+<div class="info-box">
+<h3>🕒 Working Hours</h3>
+<p>Monday - Saturday: 9 AM - 7 PM</p>
+<p>Sunday: Closed</p>
+</div>
+
+</div>
+
+<!-- RIGHT SIDE FORM -->
+
+<div class="contact-right">
+
+<h2>Send Message</h2>
+
+<form action="https://formsubmit.co/unicornbuilders@gmail.com" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<input type="tel" name="phone" placeholder="Your Phone Number">
+
+<textarea name="message" rows="5" placeholder="Your Message"></textarea>
+
+<input type="hidden" name="_captcha" value="false">
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</div>
+
+<div class="map">
+
+<iframe
+src="https://maps.google.com/maps?q=manikonda%20hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="350">
+</iframe>
+
+</div>
+
+<a class="whatsapp" href="https://wa.me/919963748635" target="_blank">
+Chat on WhatsApp
+</a>
+
+<footer>
+© 2026 UNICORN BUILDERS | All Rights Reserved
+</footer>
+
+</body>
+</html>
