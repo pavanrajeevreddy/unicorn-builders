@@ -97,6 +97,7 @@ border-radius:10px;
 overflow:hidden;
 box-shadow:0 0 10px gray;
 background:white;
+cursor:pointer;
 }
 
 .project-card img{
@@ -145,13 +146,39 @@ text-align:center;
 padding:15px;
 }
 
-/* 📱 MOBILE RESPONSIVE DESIGN */
+/* MODAL */
+
+.modal{
+display:none;
+position:fixed;
+z-index:1000;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+}
+
+.modal-content{
+background:white;
+margin:10% auto;
+padding:20px;
+width:80%;
+max-width:400px;
+border-radius:10px;
+text-align:left;
+}
+
+.close{
+float:right;
+font-size:25px;
+cursor:pointer;
+color:red;
+}
+
+/* MOBILE */
 
 @media(max-width:768px){
-
-nav{
-padding:10px;
-}
 
 nav a{
 display:block;
@@ -163,66 +190,17 @@ header h1{
 font-size:26px;
 }
 
-header p{
-font-size:14px;
-}
-
 .hero{
 height:220px;
 font-size:22px;
-text-align:center;
-padding:10px;
 }
 
-section{
-padding:25px 15px;
-}
-
-.services,
-.projects{
-grid-template-columns:1fr !important;
-}
-
-.card,
 .project-card{
-width:100%;
+width:90%;
 }
 
-h2{
-font-size:22px;
-}
-
-p{
-font-size:14px;
-}
-
-.steps{
-flex-direction:column;
-align-items:center;
-gap:20px;
-}
-
-.why-boxes{
-flex-direction:column;
-align-items:center;
-gap:20px;
-}
-
-.contact-container,
-.contact-wrapper{
-flex-direction:column;
-align-items:center;
-}
-
-.contact-info,
-.contact-form,
-.contact-left,
-.contact-right{
-width:90% !important;
-}
-
-.map iframe{
-height:250px;
+.service-box{
+width:90%;
 }
 
 }
@@ -240,7 +218,7 @@ height:250px;
 <nav>
 <a href="index.html">HOME</a>
 <a href="about.html">ABOUT</a>
-<a href="project.html">PROJECTS</a>
+<a href="projects.html">PROJECTS</a>
 <a href="services.html">SERVICES</a>
 <a href="contact.html">CONTACT</a>
 </nav>
@@ -265,17 +243,17 @@ UNICORN BUILDERS is a professional construction and real estate development comp
 
 <div class="project-container">
 
-<div class="project-card">
+<div class="project-card" onclick="openProject()">
 <img src="11111.jpeg">
 <h3>VIJAY BANU HOMES</h3>
 </div>
 
-<div class="project-card">
+<div class="project-card" onclick="openProject()">
 <img src="44444444.jpeg">
 <h3>VISHNU NIVAS</h3>
 </div>
 
-<div class="project-card">
+<div class="project-card" onclick="openProject()">
 <img src="222222222.jpeg">
 <h3>LOHITHA ENCLAVE</h3>
 </div>
@@ -314,9 +292,7 @@ UNICORN BUILDERS is a professional construction and real estate development comp
 <h2>Contact Us</h2>
 
 <p><b>Phone:</b> 9963748635</p>
-
 <p><b>Location:</b> Road No 14, Alkapur, Manikonda, Hyderabad</p>
-
 <p><b>Email:</b> unicornbuilders@email.com</p>
 
 </section>
@@ -324,6 +300,42 @@ UNICORN BUILDERS is a professional construction and real estate development comp
 <footer>
 © 2026 UNICORN BUILDERS | All Rights Reserved
 </footer>
+
+<!-- POPUP -->
+
+<div id="projectModal" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeProject()">&times;</span>
+
+<h2>Project Details</h2>
+
+<p><b>Configuration:</b> 2BHK (West Facing), 3BHK (East Facing)</p>
+<p><b>Price per Sqft:</b> ₹6500/-</p>
+<p><b>Flat Size:</b> 1200 - 1800 Sqft</p>
+<p><b>Amenities:</b> Parking, Lift, Security, Power Backup</p>
+<p><b>Maintenance Charges:</b> ₹4,00,000</p>
+
+</div>
+</div>
+
+<script>
+
+function openProject(){
+document.getElementById("projectModal").style.display="block";
+}
+
+function closeProject(){
+document.getElementById("projectModal").style.display="none";
+}
+
+window.onclick = function(event){
+let modal = document.getElementById("projectModal");
+if(event.target == modal){
+modal.style.display = "none";
+}
+}
+
+</script>
 
 </body>
 </html>
